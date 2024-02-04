@@ -17,22 +17,34 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-
-    <title>GOIT-JS #10</title>
+    <title>Task 2 - Snackbar</title>
   </head>
   <body>
-    <ul class="index-list">
-      <li>
-        
-        <a class="back-button" href="./1-timer.html">Timer</a></li>
-    
-        
-        <li>
-          <a class="back-button" href="./2-snackbar.html">Snackbar</a></li>
-    </ul>
+    <a class="back-button" href="./index.html">Main page</a>
+    <a class="back-button" href="./1-timer.html">Timer</a>
 
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  
+    <form class="form">
+      <label>
+        Delay (ms)
+        <input type="number" name="delay"  />
+      </label>
+    
+      <fieldset>
+        <legend>State</legend>
+        <label class="state-label">
+          <input type="radio" name="state" value="fulfilled"  />
+          Fulfilled
+        </label>
+        <label class="state-label">
+          <input type="radio" name="state" value="rejected"  />
+          Rejected
+        </label>
+      </fieldset>
+    
+      <button class="back-button" type="submit">Create notification</button>
+    </form>
+
+    <script type="module" src="./js/2-snackbar.js"></script>
+    
   </body>
 </html>
